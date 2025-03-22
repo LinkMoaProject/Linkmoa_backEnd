@@ -12,3 +12,12 @@ server:
   error:
     whitelabel:
       enabled: false
+
+app:
+  security:
+    jwt:
+      secret-key: "{cipher}0b2bba2d4cb01a0c79183cb61f18966104a946702c67d1abaa7a8ef4afca8a15aaed08c7c4d6fcea835f98fba76b8e3b34ef820105cdee62faa2c1df9dc462c5"
+      access-token:
+        validity-in-ms: 3600000 # 1시간
+      refresh-token:
+        validity-in-ms: 604800000 # 7일
